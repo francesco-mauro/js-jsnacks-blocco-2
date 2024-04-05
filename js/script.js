@@ -13,6 +13,7 @@ function generaArrayCasuale(dimensioneCasuale) {
 
 // input 
 let N = parseInt(prompt("Inserisci un numero N:"));
+const outputDiv = document.getElementById('output');
 
 // logica e output
 
@@ -20,6 +21,9 @@ if (!isNaN(N)) {
     for (let i = 0; i < N; i++) {
         let arrayCasuale = generaArrayCasuale(10);
         console.log(`Array numero ${i + 1}:`, arrayCasuale);
+        let p = document.createElement("p");
+        p.textContent = `Array numero ${i + 1}: ${arrayCasuale.join(', ')}`;
+        outputDiv.appendChild(p);      
     }
 } else {
     console.log("hai scritto qualcosa che non va bene, ritenta, sarei più fortnuato");
