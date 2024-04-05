@@ -5,3 +5,8 @@
     // Esegui la funzione con le due parole inserite dall'utente
 
 // Chiede all'utente di inserire due parole
+
+let parola1 = prompt("Inserisci la prima parola:");
+let parola2 = prompt("Inserisci la seconda parola:");
+
+confrontaParola(parola1, parola2);
