@@ -9,4 +9,5 @@
 let parola1 = prompt("Inserisci la prima parola:");
 let parola2 = prompt("Inserisci la seconda parola:");
 
-confrontaParola(parola1, parola2);
+let risultato = confrontaParola(parola1, parola2);
+alert(`Risultato: ${risultato}`);
